@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.finance_dashboard_afybgk3fw_i21021571_4958s_projects.twa",
+        "sha256_cert_fingerprints": ["C5:BB:18:FE:48:2D:0B:CB:3B:4C:85:F2:78:05:DD:08:8D:24:34:69:B6:C4:5C:8B:46:32:CB:C1:2E:F1:F5:E1"]
+      }
+    }]
