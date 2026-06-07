@@ -4,10 +4,14 @@
   "short_name": "FinancePro",
   "description": "Your ultimate personal finance dashboard for tracking expenses, income, and budgets.",
   "start_url": "/dashboard",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#09090b",
   "theme_color": "#8b5cf6",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/icon-192x192.png",
@@ -20,6 +24,34 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1024x576",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FinancePro Desktop Dashboard"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "576x1024",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "FinancePro Mobile Dashboard"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View Transactions",
+      "url": "/transactions",
+      "description": "Quickly check your transaction history"
+    },
+    {
+      "name": "Add Income/Expense",
+      "url": "/dashboard",
+      "description": "Quickly record a new transaction"
     }
   ],
   "categories": ["finance", "productivity"]
