@@ -61,20 +61,20 @@ export default function DashboardPage() {
   return (
     <div className="space-y-6 max-w-[1400px]">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h1 className="text-2xl font-bold text-foreground">
+          <h1 className="text-xl md:text-2xl font-bold text-foreground">
             Dashboard
           </h1>
-          <p className="text-muted-foreground text-sm mt-0.5">
+          <p className="text-muted-foreground text-xs md:text-sm mt-0.5">
             {formatDate(selectedDate)} overview
           </p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <InstallAppButton />
-          <Link href="/ai-insights" className="flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary text-sm font-semibold rounded-xl hover:bg-primary/20 transition-colors">
+          <Link href="/ai-insights" className="flex items-center gap-1.5 px-3 md:px-4 py-2 bg-primary/10 text-primary text-xs md:text-sm font-semibold rounded-xl hover:bg-primary/20 transition-colors">
             <Sparkles className="w-4 h-4" />
-            AI Insights
+            <span className="hidden sm:inline">AI Insights</span>
           </Link>
         </div>
       </div>

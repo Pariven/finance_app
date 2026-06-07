@@ -83,11 +83,11 @@ export default function InstallAppButton() {
     <>
       <button
         onClick={handleInstallClick}
-        className="flex items-center gap-2 px-4 py-2 text-white text-sm font-semibold rounded-xl shadow-lg transition-all glow-purple hover:opacity-90 animate-fade-in"
+        className="flex items-center gap-2 px-3 md:px-4 py-2 text-white text-xs md:text-sm font-semibold rounded-xl shadow-lg transition-all glow-purple hover:opacity-90 animate-fade-in"
         style={{ background: 'linear-gradient(135deg, oklch(0.58 0.22 293), oklch(0.65 0.2 220))' }}
       >
         <Download className="w-4 h-4" />
-        Download App
+        <span className="hidden sm:inline">Download App</span>
       </button>
 
       <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
